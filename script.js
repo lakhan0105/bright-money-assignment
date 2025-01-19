@@ -16,14 +16,14 @@ const faqCardsCont = document.querySelector(".faq-cards-cont");
 function loadFeaturesCards() {
   featuresCardsContainerEl.innerHTML = featuresData
     .map((item) => {
-      const { id, name, icon, description } = item;
+      const { icon, description } = item;
 
       return `
           <article class="features-single-card">
               <div>
                 <img
                   src="${icon}"
-                  alt="${name} not found"
+                  alt="${description}"
                 />
               </div>
   
@@ -40,7 +40,7 @@ function loadLogos() {
     const { name, icon } = item;
     return `
             <div>
-                <img src="${icon}" alt="${name} not found" />
+                <img src="${icon}" alt="${name}" />
             </div>
         `;
   });
@@ -50,7 +50,7 @@ function loadLogos() {
 function loadGuideCards() {
   guideCardsCont.innerHTML = guideCardsData
     .map((item) => {
-      const { id, title, text, desktopImage, mobileImage, alt } = item;
+      const { id, title, text, desktopImage, mobileImage } = item;
 
       return `
          <article class="guide-single-card">
@@ -64,7 +64,7 @@ function loadGuideCards() {
                   media="(min-width:769px)"
                   srcset="${desktopImage}"
                 />
-                <img src="${desktopImage}" alt="${alt} not found" />
+                <img src="${desktopImage}" alt="${title}" />
               </picture>
             </div>
 
@@ -138,7 +138,7 @@ function loadFaqCards() {
                   status
                     ? "./assets/icons/tick.svg"
                     : "./assets/icons/cross.svg"
-                }" alt="${status ? "tick not found" : "cross not found"}" />
+                }" alt="${status ? question + "yes" : question + "no"}" />
               </span>
             </div>
         </article>
