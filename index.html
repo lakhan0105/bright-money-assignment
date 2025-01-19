@@ -63,15 +63,28 @@
               Sign up in 2 mins
             </li>
           </ul>
+
+          <button class="start-btn">
+            Get Started
+            <img src="./assets/icons/right-btn.svg" alt="right btn not found" />
+          </button>
         </div>
 
         <!-- HERO IMAGE CONT-->
         <div class="hero-image-cont">
-          <img
-            class="hero-image"
-            src="./assets/herobg.png"
-            alt="herobg not found"
-          />
+          <picture>
+            <source
+              media="(max-width:768px)"
+              srcset="./assets/mobile-hero-bg.png"
+            />
+            <source media="(min-width:769px)" srcset="./assets/herobg.png" />
+
+            <img
+              class="hero-image"
+              src="./assets/herobg.png"
+              alt="herobg not found"
+            />
+          </picture>
 
           <img
             class="hero-badge"
@@ -95,75 +108,152 @@
 
         <!-- FEATURES CARDS CONTAINER-->
         <div class="features-cards-cont">
-          <article class="features-single-card">
-            <div>
-              <img
-                src="./assets/features/allbanks.svg"
-                alt="all banks svg not found"
-              />
-            </div>
-            <p>Accepts all major bank cards</p>
-          </article>
-
-          <article class="features-single-card">
-            <div>
-              <img
-                src="./assets/features/affordable.svg"
-                alt="affordable svg not found"
-              />
-            </div>
-            <p>Affordable monthly payments</p>
-          </article>
-
-          <article class="features-single-card">
-            <img src="./assets/features/safe.svg" alt="safe svg not found" />
-
-            <p>100% data security - 256-bit encryption</p>
-          </article>
+          <!-- features-single-card is added dynamically using JS -->
         </div>
+
+        <!-- START BTN -->
+        <button class="start-btn">
+          Get Started
+          <img src="./assets/icons/right-btn.svg" alt="right btn not found" />
+        </button>
       </div>
     </section>
 
     <!-- LOGOS SECTION -->
     <section class="logos-section">
-      <div>
-        <img src="./assets/logos/featuredby.svg" alt="not found" />
-      </div>
-
-      <div>
-        <img src="./assets/logos/bloomberg.svg" alt="not found" />
-      </div>
-      <div>
-        <img src="./assets/logos/yahoo.svg" alt="not found" />
-      </div>
-      <div>
-        <img src="./assets/logos/fortune.svg" alt="not found" />
-      </div>
-
-      <div>
-        <img src="./assets/logos/cheddar.svg" alt="not found" />
-      </div>
-
-      <div>
-        <img src="./assets/logos/cnbc.svg" alt="not found" />
-      </div>
+      <!-- logos are added dynamically using js -->
     </section>
 
     <!-- GUIDE SECTION -->
     <section class="guide-section">
-      <div class="section-center">
-        <h2 class="section-heading">
+      <div class="guide-center">
+        <!-- SECTION HEADING -->
+        <h2 class="section-heading guide-heading">
           How to pay off cards <span>with Bright?</span>
         </h2>
 
-        <img
-          class="border-line"
-          src="./assets/line.svg"
-          alt="border line not found"
-        />
-
         <!-- GUIDE CARDS CONTAINER -->
+        <div class="guide-cards-cont">
+          <!-- guide-single-card added dynamically -->
+        </div>
       </div>
     </section>
+
+    <!-- REVIEW SECTION -->
+    <section class="reviews-section">
+      <div class="review-center">
+        <!-- SECTION HEADING & SUB HEADING-->
+        <h2 class="section-heading">Changing lives everyday</h2>
+        <p class="section-subheading">
+          See how Bright users reached financial well-being
+        </p>
+
+        <!-- REVIEW CARDS CONTAINER -->
+        <div class="review-cards-cont">
+          <!-- review-single-card added dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+      <div class="section-center">
+        <!-- SECTION HEADING -->
+        <h2 class="section-heading">
+          Frequently asked
+          <span>questions</span>
+        </h2>
+
+        <!-- FAQ CONTAINER -->
+        <div class="faq-cards-cont">
+          <!-- faq-single-card added dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHT SECTION -->
+    <section class="highlight-section">
+      <div class="highlight-center">
+        <!-- HIGHLIGHT HEADING -->
+        <h2 class="highlight-heading">
+          Crush Debt today
+          <span>with Bright</span>
+        </h2>
+
+        <!-- HIGHLIGHT IMAGE -->
+        <div class="highlight-image-cont">
+          <img
+            class="credit-card"
+            src="./assets/highlight/credit-card.svg"
+            alt="credit-card svg not found"
+          />
+
+          <img
+            class="circle circle1"
+            src="./assets/highlight/ellipse-29.svg"
+            alt=""
+          />
+
+          <img
+            class="circle circle2"
+            src="./assets/highlight/ellipse-30.svg"
+            alt=""
+          />
+
+          <img
+            class="circle circle3"
+            src="./assets/highlight/ellipse-31.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>2024 Bright capital Inc.</p>
+        <p>
+          Revolving lines of credit are made by CBW Bank, Member FDIC, and
+          Bright Capital Inc., NMLS (2410428), subject to state residency.
+          Personal loans are made by our referral partners independent of
+          Bright. Deposit accounts are provided by Evolve Bank & Trust or CBW
+          Bank, Members FDIC. Bright is a financial technology company and
+          non-depository lender, not a bank.
+        </p>
+
+        <ol class="footer-list">
+          <li>
+            Revolving line of credit ranging from $500-$8,000 to help repay
+            credit cards. Variable APR range from 9% -29.99%, Subject to Credit
+            Approval. Final terms may vary depending on credit review; not all
+            applicants will qualify for the full loan amount. Not all applicants
+            qualify for the lowest rate. Bright may also offer Personal Loans
+            made by our referral partners. Bright Credit is a line of credit and
+            not a credit or debit card.
+          </li>
+
+          <li>
+            When you check your rates for Bright Credit we initiate a "soft
+            pull" of your credit. This will NOT impact your credit score. If
+            you're approved and activate Bright Credit, we may do a hard inquiry
+            which may affect your credit score.
+          </li>
+
+          <li>
+            Bright uses standard industry practices to determine our customer
+            satisfaction score. It's a metric used in all kinds of businesses to
+            measure customer service and product quality. Businesses calculate
+            their score by taking the number of satisfied customers (those who
+            rated them 4 or higher) and dividing it by the total number of
+            responses.
+          </li>
+        </ol>
+
+        <p>The product images shown are for illustration purposes only.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
