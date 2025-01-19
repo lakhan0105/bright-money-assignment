@@ -1,14 +1,17 @@
-# Responsive Webpage with JavaScript and SEO Optimization
+# Responsive Landing page assignment - Bright Money
+
+## Live link
+
+https://bright-landing.netlify.app/
 
 ## Overview
 
-This project involves building a responsive webpage using HTML, CSS, and JavaScript based on a Figma design. The page is optimized for desktop, tablet, and mobile screens. It also includes a basic interactive image carousel. Additionally, SEO optimization is implemented for better search engine visibility.
+This project involves building a responsive webpage using HTML, CSS, and JavaScript based on a Figma design. The page is optimized for desktop, tablet, and mobile screens. Additionally, SEO optimization is implemented for better search engine visibility.
 
 ## Features
 
 - **Responsive Design**: The webpage adapts to different screen sizes including desktop, tablet, and mobile.
 - **SEO Optimization**: The HTML structure is optimized for SEO with proper meta tags, headings, and image alt attributes.
-- **Google Analytics Setup**: Basic tracking is configured using Google Tag Manager (GTM) for capturing page views and button clicks.
 
 ## Technologies Used
 
