@@ -155,19 +155,5 @@ const init = () => {
   loadFaqCards();
 };
 
-document.querySelector(".start-btn").addEventListener("click", function () {
-  // Log to confirm the button click is working
-  console.log("Button clicked");
-
-  // Ensure dataLayer exists
-  window.dataLayer = window.dataLayer || [];
-
-  // Push the event to dataLayer
-  dataLayer.push({
-    event: "button_click",
-    button_class: "start-btn",
-  });
-});
-
 // run init function when DOM loads
 window.addEventListener("DOMContentLoaded", init);
