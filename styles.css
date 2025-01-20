@@ -620,12 +620,12 @@ header {
 
   .guide-image-cont {
     width: 150%;
-    /* max-width: 100%; */
-    transform: translateX(0%);
+    overflow: hidden;
   }
 
   .guide-single-card:nth-child(even) {
     flex-direction: column-reverse;
+    padding-left: 10px;
   }
 
   /* add a solid border top */
@@ -637,11 +637,6 @@ header {
     height: 1.5px;
     content: "";
     background: #bae8cb;
-  }
-
-  /* remove padding-left from even card */
-  .guide-single-card:nth-child(even) {
-    padding-left: 0;
   }
 
   /* hide all the top linear borders */
